@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 function App() {
   return (
     <BrowserRouter>
+      <p className="text-xs absolute right-0 text-black z-10">Version: 0.0.0-alpha</p>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/battle" element={<BattleArena />} />

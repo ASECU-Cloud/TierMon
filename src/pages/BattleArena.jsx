@@ -1,10 +1,15 @@
 import BattleButton from "../components/BattleButton";
-import happy_shock from "../assets/happy_shock.png";
-import tier_shock from "../assets/tier_shock.png";
+
+/**
+ * rect = $0.getBoundingClientRect()
+ *
+ * function to determine where the hell is a certail position of a thing
+ *
+ */
 
 export default function BattleArena() {
   return (
-    <div className="h-screen bg-slate-400 ">
+    <div className="h-screen bg-gradient-to-b from-sky-300 from-40% via-emerald-400 via-45% to-emerald-400 absolute inset-0">
       <p>battle Arena</p>
       {/* start template pokemon */}
       <div className="absolute top-16 right-6 bg-white rounded-md p-4 ">
@@ -13,12 +18,12 @@ export default function BattleArena() {
           <div className="flex flex-row items-center  gap-2">
             <p>HP</p>
             <p>:</p>
-            <progress className="progress progress-info w-28" value="80" max="100"></progress>
+            <progress className="progress progress-info w-28 " value="80" max="100"></progress>
           </div>
         </div>
-        <div className="w-24 rounded ">
+        <div className="w-24 h-32 rounded ">
           <img
-            src={happy_shock}
+            src="https://placehold.co/96x128"
             className="rounded-md object-contain w-full h-full"
             alt="Tier Shock"
           />
@@ -32,12 +37,16 @@ export default function BattleArena() {
           <div className="flex flex-row items-center  gap-2">
             <p>HP</p>
             <p>:</p>
-            <progress className="progress progress-info w-28" value="10" max="100"></progress>
+            <progress
+              className="animate-pulse progress progress-error w-28"
+              value="20"
+              max="100"
+            ></progress>
           </div>
         </div>
-        <div className="w-24 rounded ">
+        <div className="w-24 h-32 rounded ">
           <img
-            src={tier_shock}
+            src="https://placehold.co/96x128"
             className="rounded-md object-contain w-full h-full"
             alt="Tier Shock"
           />
