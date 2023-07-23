@@ -186,7 +186,7 @@ export default function ItemModal() {
         </div>
 
         <div className="modal-action ">
-          <button className="btn btn-sm bg-red-700 border-none text-white">Cancel</button>
+          <button className="btn btn-sm bg-error border-none text-white">Cancel</button>
         </div>
       </form>
       <form method="dialog" className="modal-backdrop">
