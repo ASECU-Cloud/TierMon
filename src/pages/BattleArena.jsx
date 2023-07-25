@@ -5,7 +5,7 @@ import Player from "../components/tiermon/Player";
 /**
  * rect = $0.getBoundingClientRect()
  *
- * function to determine where the hell is a certail position of a thing
+ * function to determine where the hell is a certain position of a thing
  *
  */
 
